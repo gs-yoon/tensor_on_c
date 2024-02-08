@@ -1,0 +1,3 @@
+/root/workspace/tensor_on_c/build/CMakeFiles/rebuild_cache.dir
+/root/workspace/tensor_on_c/build/CMakeFiles/tensor.dir
+/root/workspace/tensor_on_c/build/CMakeFiles/edit_cache.dir
