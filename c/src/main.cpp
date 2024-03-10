@@ -7,6 +7,8 @@ int main()
 {
     Tensor<float> test;
 
+    Tensor32f test = makeTensor();
+
     test.makeTensor({2,3});
     test.print();
     //test.makeZeros({2,3});
