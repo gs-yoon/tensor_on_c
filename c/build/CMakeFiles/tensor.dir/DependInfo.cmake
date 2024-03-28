@@ -1,20 +1,21 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
+  "C"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/workspace/tensor_on_c/src/main.cpp" "/root/workspace/tensor_on_c/build/CMakeFiles/tensor.dir/src/main.cpp.o"
-  "/root/workspace/tensor_on_c/src/tensor/shape.cpp" "/root/workspace/tensor_on_c/build/CMakeFiles/tensor.dir/src/tensor/shape.cpp.o"
-  "/root/workspace/tensor_on_c/src/tensor/tensor.cpp" "/root/workspace/tensor_on_c/build/CMakeFiles/tensor.dir/src/tensor/tensor.cpp.o"
+set(CMAKE_DEPENDS_CHECK_C
+  "/root/workspace/tensor_on_c/c/src/main.c" "/root/workspace/tensor_on_c/c/build/CMakeFiles/tensor.dir/src/main.c.o"
+  "/root/workspace/tensor_on_c/c/src/tensor/tensor.c" "/root/workspace/tensor_on_c/c/build/CMakeFiles/tensor.dir/src/tensor/tensor.c.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/opencv4"
+set(CMAKE_C_TARGET_INCLUDE_PATH
   "../includes/tensor"
   "../includes/definition"
+  "../includes/tensor/kernel"
+  "../includes/tensor/kernel/t32f"
+  "../includes/tensor/kernel/t32f/architecture"
   )
 
 # Targets to which this target links.

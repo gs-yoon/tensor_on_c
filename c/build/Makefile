@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/workspace/tensor_on_c
+CMAKE_SOURCE_DIR = /root/workspace/tensor_on_c/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/workspace/tensor_on_c/build
+CMAKE_BINARY_DIR = /root/workspace/tensor_on_c/c/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/tensor_on_c/build/CMakeFiles /root/workspace/tensor_on_c/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/tensor_on_c/c/build/CMakeFiles /root/workspace/tensor_on_c/c/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/tensor_on_c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/tensor_on_c/c/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,86 +123,99 @@ tensor/fast:
 	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/build
 .PHONY : tensor/fast
 
-src/main.o: src/main.cpp.o
+#=============================================================================
+# Target rules for targets named testo
+
+# Build rule for target.
+testo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testo
+.PHONY : testo
+
+# fast build rule for target.
+testo/fast:
+	$(MAKE) -f CMakeFiles/testo.dir/build.make CMakeFiles/testo.dir/build
+.PHONY : testo/fast
+
+src/main.o: src/main.c.o
 
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-src/main.i: src/main.cpp.i
+src/main.i: src/main.c.i
 
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-src/main.s: src/main.cpp.s
+src/main.s: src/main.c.s
 
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-src/tensor/shape.o: src/tensor/shape.cpp.o
-
-.PHONY : src/tensor/shape.o
-
-# target to build an object file
-src/tensor/shape.cpp.o:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/shape.cpp.o
-.PHONY : src/tensor/shape.cpp.o
-
-src/tensor/shape.i: src/tensor/shape.cpp.i
-
-.PHONY : src/tensor/shape.i
-
-# target to preprocess a source file
-src/tensor/shape.cpp.i:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/shape.cpp.i
-.PHONY : src/tensor/shape.cpp.i
-
-src/tensor/shape.s: src/tensor/shape.cpp.s
-
-.PHONY : src/tensor/shape.s
-
-# target to generate assembly for a file
-src/tensor/shape.cpp.s:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/shape.cpp.s
-.PHONY : src/tensor/shape.cpp.s
-
-src/tensor/tensor.o: src/tensor/tensor.cpp.o
+src/tensor/tensor.o: src/tensor/tensor.c.o
 
 .PHONY : src/tensor/tensor.o
 
 # target to build an object file
-src/tensor/tensor.cpp.o:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.cpp.o
-.PHONY : src/tensor/tensor.cpp.o
+src/tensor/tensor.c.o:
+	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.c.o
+.PHONY : src/tensor/tensor.c.o
 
-src/tensor/tensor.i: src/tensor/tensor.cpp.i
+src/tensor/tensor.i: src/tensor/tensor.c.i
 
 .PHONY : src/tensor/tensor.i
 
 # target to preprocess a source file
-src/tensor/tensor.cpp.i:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.cpp.i
-.PHONY : src/tensor/tensor.cpp.i
+src/tensor/tensor.c.i:
+	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.c.i
+.PHONY : src/tensor/tensor.c.i
 
-src/tensor/tensor.s: src/tensor/tensor.cpp.s
+src/tensor/tensor.s: src/tensor/tensor.c.s
 
 .PHONY : src/tensor/tensor.s
 
 # target to generate assembly for a file
-src/tensor/tensor.cpp.s:
-	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.cpp.s
-.PHONY : src/tensor/tensor.cpp.s
+src/tensor/tensor.c.s:
+	$(MAKE) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.c.s
+.PHONY : src/tensor/tensor.c.s
+
+test.o: test.c.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.c.o:
+	$(MAKE) -f CMakeFiles/testo.dir/build.make CMakeFiles/testo.dir/test.c.o
+.PHONY : test.c.o
+
+test.i: test.c.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) -f CMakeFiles/testo.dir/build.make CMakeFiles/testo.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) -f CMakeFiles/testo.dir/build.make CMakeFiles/testo.dir/test.c.s
+.PHONY : test.c.s
 
 # Help Target
 help:
@@ -211,17 +224,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... tensor"
 	@echo "... edit_cache"
+	@echo "... tensor"
+	@echo "... testo"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/tensor/shape.o"
-	@echo "... src/tensor/shape.i"
-	@echo "... src/tensor/shape.s"
 	@echo "... src/tensor/tensor.o"
 	@echo "... src/tensor/tensor.i"
 	@echo "... src/tensor/tensor.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

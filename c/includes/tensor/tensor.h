@@ -1,9 +1,12 @@
+#ifndef __TENSOR_H__
+#define __TENSOR_H__
 
-bool initTensor(Tensor* );
-bool makeTensor(int ndim, ...);
-bool makeZeros(int ndim, ...);
-bool makeOnes(int ndim, ...);
-bool breakTensor(Tensr* tensor);
+#include "t32f_generic.h"
 
+void* makeTensor(int ndim, ...);
+void* makeZeros(int ndim, ...);
+void* makeOnes(int ndim, ...);
+void* breakTensor(struct pf_tensor* tensor);
 
+#endif
 

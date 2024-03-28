@@ -1,17 +1,17 @@
 [
 {
-  "directory": "/root/workspace/tensor_on_c/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/local/include/opencv4 -I/root/workspace/tensor_on_c/includes/tensor -I/root/workspace/tensor_on_c/includes/definition  -g   -o CMakeFiles/tensor.dir/src/main.cpp.o -c /root/workspace/tensor_on_c/src/main.cpp",
-  "file": "/root/workspace/tensor_on_c/src/main.cpp"
+  "directory": "/root/workspace/tensor_on_c/c/build",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7  -I/root/workspace/tensor_on_c/c/includes/tensor -I/root/workspace/tensor_on_c/c/includes/definition -I/root/workspace/tensor_on_c/c/includes/tensor/kernel -I/root/workspace/tensor_on_c/c/includes/tensor/kernel/t32f -I/root/workspace/tensor_on_c/c/includes/tensor/kernel/t32f/architecture  -g   -o CMakeFiles/tensor.dir/src/main.c.o   -c /root/workspace/tensor_on_c/c/src/main.c",
+  "file": "/root/workspace/tensor_on_c/c/src/main.c"
 },
 {
-  "directory": "/root/workspace/tensor_on_c/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/local/include/opencv4 -I/root/workspace/tensor_on_c/includes/tensor -I/root/workspace/tensor_on_c/includes/definition  -g   -o CMakeFiles/tensor.dir/src/tensor/shape.cpp.o -c /root/workspace/tensor_on_c/src/tensor/shape.cpp",
-  "file": "/root/workspace/tensor_on_c/src/tensor/shape.cpp"
+  "directory": "/root/workspace/tensor_on_c/c/build",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7  -I/root/workspace/tensor_on_c/c/includes/tensor -I/root/workspace/tensor_on_c/c/includes/definition -I/root/workspace/tensor_on_c/c/includes/tensor/kernel -I/root/workspace/tensor_on_c/c/includes/tensor/kernel/t32f -I/root/workspace/tensor_on_c/c/includes/tensor/kernel/t32f/architecture  -g   -o CMakeFiles/tensor.dir/src/tensor/tensor.c.o   -c /root/workspace/tensor_on_c/c/src/tensor/tensor.c",
+  "file": "/root/workspace/tensor_on_c/c/src/tensor/tensor.c"
 },
 {
-  "directory": "/root/workspace/tensor_on_c/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/local/include/opencv4 -I/root/workspace/tensor_on_c/includes/tensor -I/root/workspace/tensor_on_c/includes/definition  -g   -o CMakeFiles/tensor.dir/src/tensor/tensor.cpp.o -c /root/workspace/tensor_on_c/src/tensor/tensor.cpp",
-  "file": "/root/workspace/tensor_on_c/src/tensor/tensor.cpp"
+  "directory": "/root/workspace/tensor_on_c/c/build",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7  -I/root/workspace/tensor_on_c/c/includes/tensor -I/root/workspace/tensor_on_c/c/includes/definition -I/root/workspace/tensor_on_c/c/includes/tensor/kernel -I/root/workspace/tensor_on_c/c/includes/tensor/kernel/t32f -I/root/workspace/tensor_on_c/c/includes/tensor/kernel/t32f/architecture  -g   -o CMakeFiles/testo.dir/test.c.o   -c /root/workspace/tensor_on_c/c/test.c",
+  "file": "/root/workspace/tensor_on_c/c/test.c"
 }
 ]
