@@ -34,7 +34,7 @@ struct pf_Tensor32f
 
 struct pf_Tensor32f* mull(struct pf_Tensor32f *self,       struct pf_Tensor32f *operand)
 {
-    printf("hi\n");
+    printf("hii\n");
 }
 
 void init_(struct pf_Tensor32f* t)
